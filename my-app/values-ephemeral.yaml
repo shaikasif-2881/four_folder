@@ -1,0 +1,11 @@
+# values-ephemeral.yaml
+# These values will be overridden dynamically by the ApplicationSet
+env: ephemeral
+replicaCount: 1      # save resources
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi

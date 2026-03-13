@@ -1,0 +1,18 @@
+# values.yaml
+nameOverride: ''
+env: production
+image:
+  repository: my-org/my-app
+  tag: latest
+  pullPolicy: IfNotPresent
+ingress:
+  enabled: true
+  host: my-app.example.com
+replicaCount: 2
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi

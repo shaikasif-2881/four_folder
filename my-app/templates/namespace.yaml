@@ -1,0 +1,8 @@
+# templates/namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ .Release.Namespace }}
+  labels:
+    type: ephemeral
+    branch: {{ .Values.branch | quote }}
